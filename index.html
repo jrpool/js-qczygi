@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Your Accounts</title>
+  <!--<link rel="stylesheet" href="style.css">-->
+</head>
+<body>
+  <main>
+    <h1>Your Accounts</h1>
+    <section>
+      <header>
+        <h2>Summary</h2>
+      </header>
+      <table class="padded30">
+        <caption>Available cash and today&rsquo;s change</caption>
+        <thead>
+          <tr>
+            <th class="left nonsorting"><span>Account</span></th>
+            <th class="right sorting ascending">
+              <span>Available Cash</span>
+              <br>
+              <span class="secondary">Today's Change</span>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="account">IRA - 5200</th>
+            <td class="right">
+              <span class="cash">$5,763.36</span>
+              <br>
+              <span class="change negative">&minus;0.08% / $8,916.69</span>
+            </td>
+          </tr>
+          <tr>
+            <th class="account">AAA - 1812</th>
+            <td class="right">
+              <span class="cash">$2,010,926.10</span>
+              <br>
+              <span class="change positive">+0.21% / $38,881.63</span>
+            </td>
+          </tr>
+          <tr>
+            <th class="account">AAA - 3810</th>
+            <td class="right">
+              <span class="cash">$10,050,054.07</span>
+              <br>
+              <span class="change positive">+0.07% / $8,916.69</span>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr><td colspan="2">Load more</td></tr>
+        </tfoot>
+      </table>
+    </section>
+    <section>
+      <header>
+        <h2>Accessibility Notes</h2>
+      </header>
+      <ol class="notes">
+        <li>The hyphen-minus character prefixing the 0.08% has been replaced by the semantically correct minus symbol, a critical measure to prevent users from misunderstanding negative numbers as positive. However, support by assistive technologies may depend on user configurations for punctuation, so testing with multiple screen readers is advisable.</li>
+        <li>The Account column cells are classified as row headers. This permits assistive technologies to announce an account whenever a user navigates vertically within the right column.</li>
+        <li>Table headers have not been equipped with &ldquo;scope&rdquo; attributes, because their scopes are automatically inferred by the default algorithm (see <a href="https://www.w3.org/TR/WCAG20-TECHS/H63.html">WCAG 2.0 H63</a>).
+        <li>The tripartite cells in the right column may be difficult for users of assistive technologies to understand. A design in which the change is in its own column may improve intelligibility.</li>
+        <li>The column header cells and the &ldquo;Load more&rdquo; cell are designed to contain actionable elements, but they are not styled or labeled to show this. A more accessible treatment would put sorting and loading buttons, looking like buttons, into the cells, with appropriate purpose and state labels.</li>
+        <li>If the user zooms in and narrows the window, the whitespace decreases to prevent the need for horizontal scrolling (<a href="https://www.w3.org/TR/WCAG21/#reflow">WCAG 2.1 SC 1.4.10</a>). More comprehensive measures are available to make tables responsive.</li>
+      </ol>
+    </section>
+  </main>
+</body>
+</html>

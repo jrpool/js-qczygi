@@ -1,0 +1,91 @@
+@media (min-width: 25rem) {
+  .padded30 > thead th {
+    min-width: 40vw;
+  }
+}
+@media (min-width: 35rem) {
+  .padded30 > thead th {
+    min-width: 14rem;
+  }
+}
+* {
+  font-family: sans-serif;
+}
+.account {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #0077bb;
+}
+.account, .left {
+  text-align: left;
+}
+body {
+  max-width: 35rem;
+}
+caption {
+  margin-bottom: 0.8rem;
+}
+.cash {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+.change {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+h1, h2 {
+  text-align: center;
+}
+li {
+  line-height: 1.5;
+  margin-top: 0.8rem;
+}
+.negative {
+  color: #a00;
+}
+.nonsorting {
+  background-color: #f0f0f0;
+}
+.positive {
+  color: #0a0;
+}
+.right {
+  text-align: right;
+}
+.secondary {
+  color: #606060;
+}
+.sorting {
+  background-color: #e0e0e0;
+}
+.sorting::before {
+  content: "^";
+  font-weight: 700;
+  color: #0077bb;
+}
+table {
+  margin: 0 auto;
+  border: 0.4rem solid #0077bb;
+  border-collapse: collapse;
+}
+tbody th, td {
+  vertical-align: middle;
+  border-bottom: 0.2rem solid #eee;
+}
+td, th {
+  padding: 0.5rem 0.8rem;
+}
+tfoot td {
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0077bb;
+}
+thead th {
+  font-size: 1.1rem;
+  vertical-align: bottom;
+  border-bottom: 0.2rem solid #ccc;
+  color: #333;
+}
